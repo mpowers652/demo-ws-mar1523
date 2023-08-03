@@ -1,0 +1,7 @@
+<div *ngFor="let name of names">
+    <p [class.text-success] = "name.length > 5"
+        [class.text-primary] = "name.length < 5">
+        name is {{name}}
+    </p>
+</div>
+<app-math></app-math>
